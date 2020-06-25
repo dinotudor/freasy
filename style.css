@@ -700,7 +700,18 @@ textarea {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: flex;
+	position: relative;
+}
+
+#primary-menu {
+	margin-top: 20px;
+	position: absolute;
+	background: rgba(255, 255, 255, .7) ;
+}
+
+#primary-menu li {
+	margin-right: 10px;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -983,6 +994,25 @@ textarea {
 /* MOBILE */
 
 @media screen and (max-width: 480px) {
+
+	#masthead.site-header {
+		display: flex;
+		align-items: center;
+		padding: 20px 30px;
+		flex-direction: row-reverse;
+	}
+
+	.site-branding img {
+		max-width: 80%;
+	}
+
+	.entry-title {
+		display: none;
+	}
+
+	.entry-content h2 {
+		padding-left: 12px;
+	}
 
 }
 
